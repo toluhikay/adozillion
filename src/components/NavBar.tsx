@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../assets/images/Logo.png";
 import { BsFillPlayFill } from "react-icons/bs";
 import { HiOutlineMenu } from "react-icons/hi";
@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 
 const NavBar: React.FC = () => {
   const [navState, setNavState] = useState(false);
+
+  useEffect(() => {}, []);
 
   const Links = [
     { id: 1, link: "home", linkName: "home" },
@@ -27,18 +29,18 @@ const NavBar: React.FC = () => {
   ];
 
   return (
-    <header className="md:sticky fixed top-0 left-0 w-full flex flex-col md:flex-row justify-between items-center lg:px-[89px] px-[30px] md:py-[25px] py-3 bg-white z-[2000]">
+    <header className="transition-all fixed top-0 left-0 w-full backdrop-blur-sm bg-white/60 text-black/70 flex flex-col md:flex-row justify-between items-center lg:px-[89px] px-[30px] py-2 z-[2000]">
       <div className="w-full md:w-auto flex justify-between">
-        <img src={Logo} alt="" />
+        <img className="sm:w-auto w-[150px]" src={Logo} alt="" />
         <div className="md:hidden" onClick={() => setNavState(!navState)}>
           {!navState ? <HiOutlineMenu className="text-4xl" /> : <IoMdClose className="text-4xl" />}
         </div>
       </div>
-      <nav className={`transition duration-500 md:h-auto ease-linear lg:w-1/2 md:w-2/3 w-full ${navState ? "h-auto" : "h-0"} md:overflow-visible overflow-hidden`}>
+      <nav className={`transition-all duration-500 md:h-auto ease-linear lg:w-1/2 md:w-2/3 w-full ${navState ? "h-auto" : "h-0"} md:overflow-visible overflow-hidden`}>
         <ul className="w-full flex md:flex-row flex-col justify-between py-5">
           {Links.map((LINK, index) => {
             return LINK.project ? (
-              <div className="relative group">
+              <div className="relative group" key={index}>
                 <p className="font-semibold capitalize cursor-pointer flex md:mb-0 group-hover:mb-0 mb-12 items-center" key={index}>
                   {LINK.linkName} <BsFillPlayFill className="text-[14px] ml-1" />
                 </p>

@@ -16,15 +16,15 @@ const Services = () => {
   return (
     <section className="w-full">
       <div className="w-full flex flex-col justify-center items-center lg:py-[93px] py-12 lg:px-[89px] px-[30px]">
-        <h2 className="lg:text-5xl md:text-4xl text-2xl font-bold lg:mb-[109px] md:mb-[70px] mb-12">Services We Render</h2>
+        <h2 className="lg:text-3xl md:text-2xl text-xl font-bold lg:mb-[109px] md:mb-[70px] mb-12">Services We Render</h2>
         <div className="flex flex-wrap justify-between">
           {ServicesData.map((item, index) => {
             return (
-              <div className="md:w-[48%] w-full justify-between items-center flex lg:mb-[149px] md:mb-[89px] mb-16" key={index}>
+              <div data-aos={index % 2 === 0 ? "zoom-out-right" : "zoom-out-left"} data-aos-duration="800" className="md:w-[48%] w-full justify-between items-center flex lg:mb-[149px] md:mb-[89px] mb-16" key={index}>
                 <img src={item.img} className="sm:mr-[39px] mr-2 bg-[#B8934921] sm:p-5 p-2 md:w-auto w-[100px] h-auto rounded-[5px]" alt="" />
                 <div>
                   <p className="font-semibold sm:text-base text-sm sm:mb-3 m-1">{item.label}</p>
-                  <p className="sm:text-base text-xs">{item.content}</p>
+                  <p className="sm:text-base text-xs font-light">{item.content}</p>
                 </div>
               </div>
             );
