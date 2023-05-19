@@ -11,7 +11,7 @@ import ValueGarden from "../pages/ValueGarden";
 
 const Router = () => {
   return (
-    <div className="w-full max-w-[1800px]">
+    <div className="w-full overflow-x-hidden max-w-[1800px]">
       <NavBar />
       <div>
         <Routes>

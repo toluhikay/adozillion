@@ -16,21 +16,21 @@ const ContactUs = () => {
   return (
     <section className="w-full">
       <div className="w-full lg:my-[123px] lg:pl-[89px] lg:pt-0 md:pt-0 pt-[70px]">
-        <h2 className="lg:text-5xl md:text-3xl text-2xl font-bold lg:text-start text-center">Contact Us</h2>
+        <h2 className="lg:text-3xl md:text-2xl text-xl font-bold lg:text-start text-center">Contact Us</h2>
         <div className="flex flex-wrap lg:flex-row flex-col-reverse justify-between my-12 items-center">
           <div className="flex flex-wrap lg:w-[49%] w-full lg:mb-0 mb-12 lg:p-0 md:p-12 p-[30px] justify-between">
             {CONTACTDATA.map((item, index) => {
               return (
                 <div className="bg-white shadow-lg sm:w-[48%] w-full mb-12 py-12 px-9" key={index}>
-                  <div className="flex w-full xl:flex-row lg:flex-col justify-between items-center capitalize mb-7">
-                    <div className="bg-[#B8934921] text-xl p-4">{item.icon}</div>
-                    <div className="xl:text-start lg:text-center text-start xl:mt-0 lg:mt-3">
+                  <div className="flex w-full flex-col items-center text-center capitalize mb-7">
+                    <div className="bg-primary mb-2 text-white mr-1 text-xl p-4">{item.icon}</div>
+                    <div className=" text-primary  xl:mt-0 lg:mt-3">
                       <p>{item.label}</p>
                       <p className="text-xs">{item.value}</p>
                     </div>
                   </div>
-                  <div className="w-full bg-[#EED7AB] flex items-center justify-center">
-                    <a href={item.link} className="flex w-full justify-center items-center py-2 capitalize cursor-pointer" target="blank">
+                  <div className="w-full bg-primary flex items-center justify-center">
+                    <a href={item.link} className="flex w-full justify-center items-center py-2 text-white capitalize cursor-pointer" target="blank">
                       {item.label} now
                     </a>
                   </div>
@@ -38,8 +38,8 @@ const ContactUs = () => {
               );
             })}
           </div>
-          <div className="lg:w-[48%] w-full bg-[url('/src/assets/images/CustomerSupportImage.jpeg')] rounded-l-full sm:py-6 sm:pl-6 py-3 pl-3 bg-blend-darken bg-black/30 backdrop-blur-sm">
-            <img src={CustomerCare} className="w-full rounded-l-full" alt="" />
+          <div className="lg:w-[48%] w-full bg-[url('/src/assets/images/CustomerSupportImage.jpeg')]  sm:py-6 sm:pl-6 py-3 pl-3 bg-blend-darken bg-black/30 backdrop-blur-sm">
+            <img src={CustomerCare} className="w-full " alt="" />
           </div>
         </div>
       </div>

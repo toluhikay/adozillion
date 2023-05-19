@@ -31,25 +31,25 @@ const FreshInMarket = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <p className="lg:text-5xl md:text-3xl text-2xl font-bold lg:mb-14 md:mb-9 mb-8">Fresh in the market</p>
+      <p className="lg:text-3xl md:text-2xl text-xl text-primary font-bold lg:mb-14 md:mb-9 mb-8">Fresh in the market</p>
       <div className="flex flex-wrap justify-between w-full">
         {FreshMarketData.map((item, index) => {
           return (
-            <div className="md:w-[48%] flex justify-start h-full flex-col md:mb-0 mb-12 items-start w-full" key={index}>
+            <div data-aos={index % 2 === 0 ? "fade-right" : "fade-left"} data-aos-duration="1000" className="md:w-[48%] flex justify-start h-full flex-col md:mb-0 mb-12 items-start w-full" key={index}>
               <img className="w-full" src={item.img} alt="" />
               <p className="font-semibold md:text-2xl text-lg py-1">{item.name}</p>
               <p className="pb-1">{item.location}</p>
               <div className="flex flex-wrap">
                 {item.tags.map((tag, tagIndex) => {
                   return (
-                    <p className="flex w-auto sm:p-4 p-1 sm:text-base text-sm h-auto bg-[#DDB05775] mr-4 mb-4 rounded-[10px]" key={tagIndex}>
+                    <p className="flex w-auto sm:p-4 p-1 sm:text-base text-sm h-auto bg-[#DDB05775] mr-4 mb-4 rounded-[2px]" key={tagIndex}>
                       <span>{tag.size}</span>
                       <span className="ml-1">{tag.price}</span>
                     </p>
                   );
                 })}
               </div>
-              <button className="bg-[#B89349] p-4 text-white rounded-[10px] font-bold">Explore Property</button>
+              <button className="bg-[#B89349] p-4 text-white rounded-[2px] font-bold">Explore Property</button>
             </div>
           );
         })}
