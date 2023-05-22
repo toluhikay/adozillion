@@ -14,7 +14,7 @@ const Socials = () => {
       {SOCIALSDATA.map((item) => {
         return (
           <a href="d" key={item.id}>
-            <p className="bg-secondary text-primary rounded-full mb-3 text-xl p-2">{item.icon}</p>
+            <p className="bg-secondary text-primary rounded-full md:mb-3 mb-1 md:text-xl text-sm p-2">{item.icon}</p>
           </a>
         );
       })}
