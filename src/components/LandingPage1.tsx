@@ -13,7 +13,7 @@ const LandingPage1 = () => {
 
   return (
     <div className="w-full relative bg-gradient-to-tr from-yellow-100 via-yellow-200 to-white bg-center bg-cover bg-no-repeat min-h-screen flex flex-col justify-center items-center ">
-      <div className="flex flex-col text-secondary justify-center text-center lg:px-[89px] px-[30px] lg:pt-0  pt-[100px] items-center">
+      <div className="flex flex-col text-secondary justify-center text-center lg:px-[89px] px-[30px] lg:pt-[150px] pt-[100px] items-center">
         <h1 className="font-bold lg:text-5xl md:text-4xl sm:text-3xl text-2xl mb-3">Luxury at its Peak</h1>
         <p className="font-light text-center mb-6">Find variety of options that suits you and you family. Adozillion homes is here to make your life easy.</p>
         <button className="bg-secondary text-white px-6 py-2 text-xl font-light rounded-[2px]">Get Started</button>
@@ -21,8 +21,8 @@ const LandingPage1 = () => {
       <div className="flex flex-wrap justify-between mb-[100px] lg:px-[89px] mt-[30px] px-[30px]">
         {ProjectData.map((item) => {
           return (
-            <div className="lg:w-[23%] sm:w-[48%] w-full md:mb-0 mb-3 text-secondary" key={item.id}>
-              <img src={item.img} className="w-full h-[200px] lg:h-[300px]" alt="" />
+            <div className="sm:w-[48%] w-full md:mb-0 mb-3 text-secondary" key={item.id}>
+              <img src={item.img} className="w-full h-[200px] lg:h-[300px] xl:h-[350px]" alt="" />
               <p className="font-bold py-3 underline">{item.name}</p>
             </div>
           );
