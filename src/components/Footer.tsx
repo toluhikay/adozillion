@@ -35,14 +35,14 @@ const Footer: React.FC = () => {
     <footer className="mt-[50px] bg-black text-[#ABB5BE] lg:pt-[146px] md:pt-[70px] pt-[50px] lg:px-[123px] md:px-[50px] px-[30px]">
       <div className="flex sm:flex-row flex-col justify-between mb-12">
         <div className="sm:w-auto w-full">
-          <img src={Logo} alt="" />
+          <img src={Logo} className="w-[150px]" alt="" />
           <div className="flex items-center mt-4">
             <LocationIcon />
-            <p className="ml-2 text-xl">Lagos, Nigeria</p>
+            <p className="ml-2 md:text-xl text-sm">Lagos, Nigeria</p>
           </div>
           <div className="flex items-center mt-4">
             <WorldIcon />
-            <p className="ml-2 text-xl">English(United Kingdom)</p>
+            <p className="ml-2 md:text-xl text-sm">English(United Kingdom)</p>
           </div>
           <div className="flex items-center py-5">
             {SOCIALS.map((social) => {
@@ -61,11 +61,11 @@ const Footer: React.FC = () => {
           <div className="flex flex-col sm:justify-end sm:items-end items-start">
             {Links.map((LINK, index) => {
               return LINK.project ? (
-                <p className="flex items-center capitalize mb-3 hover:text-yellow-600 cursor-pointer" key={index}>
+                <p className="flex items-center capitalize mb-3 md:text-xl text-sm hover:text-yellow-600 cursor-pointer" key={index}>
                   {LINK.linkName} <BsFillPlayFill className="text-[14px] ml-1" />
                 </p>
               ) : (
-                <Link to={LINK.link} className="capitalize font-semibold mb-3 hover:text-yellow-600" key={index}>
+                <Link to={LINK.link} className="capitalize font-semibold mb-3 md:text-xl text-sm hover:text-yellow-600" key={index}>
                   <p>{LINK.linkName}</p>
                 </Link>
               );
@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="py-4 border-t text-xs">
+      <div className="py-4 border-t text-xs text-center">
         <p>Copyrights © {DATE} Adozillion Homes and Realty Ltd- All Rights Reserved</p>
       </div>
     </footer>

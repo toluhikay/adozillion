@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-image": "url('/src/assets/images/HeroImage.png')",
+        "hero-image1": "url('/src/assets/images/LandingPageBg.jpeg')",
         "subscribe-image": "url('/src/assets/images/SubscribeBg.png')",
         "contact-image": "url('/src/assets/images/CustomerSupportImage.jpeg')",
         "about-image": "url('/src/assets/images/AboutUsBg.png')",
@@ -18,6 +19,7 @@ module.exports = {
         primary: "#DDB057",
         primary2: "#93753A",
         primary3: "#DDB05775",
+        secondary: "#011700",
         // primary: "#ff1144",
         // primary2: "#ff0000",
         // primary3: "#ff5500",

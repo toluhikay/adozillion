@@ -8,22 +8,28 @@ import ContactUsPage from "../pages/ContactUsPage";
 import MufasaApartments from "../pages/MufasaApartments";
 import AlphaTribe from "../pages/AlphaTribe";
 import ValueGarden from "../pages/ValueGarden";
+import LandingPage1 from "../components/LandingPage1";
+import WhatsAppCall from "../components/WhatsAppCall";
+import Socials from "../components/Socials";
 
 const Router = () => {
   return (
-    <div className="w-full overflow-x-hidden max-w-[1800px]">
+    <div className="w-full relative overflow-x-hidden max-w-[1800px]">
       <NavBar />
       <div>
         <Routes>
-          <Route index element={<LandingPage />} />
-          <Route path="/about_us" element={<AboutUs />} />
+          {/* <Route index element={<LandingPage />} /> */}
+          <Route index element={<LandingPage1 />} />
+          {/* <Route path="/about_us" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUsPage />} />
           <Route path="alpha_tribe" element={<AlphaTribe />} />
           <Route path="mufasa_apartment" element={<MufasaApartments />} />
-          <Route element={<ValueGarden />} path="value_garden_city" />
+          <Route element={<ValueGarden />} path="value_garden_city" /> */}
         </Routes>
       </div>
-      <Footer />
+      <WhatsAppCall />
+      <Socials />
+      {/* <Footer /> */}
     </div>
   );
 };
