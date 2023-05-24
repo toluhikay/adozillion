@@ -9,7 +9,7 @@ module.exports = {
         "subscribe-image": "url('/src/assets/images/SubscribeBg.png')",
         "contact-image": "url('/src/assets/images/CustomerSupportImage.jpeg')",
         "about-image": "url('/src/assets/images/AboutUsBg.png')",
-        "contact-us-image": "url('/src/assets/images/ContactUsBg.png')",
+        "contact-us-image": "url('/src/assets/images/ContactUsbg.png')",
         "team-image": "url('/src/assets/images/TeamBg.png')",
         "alpha-bgimage": "url('/src/assets/images/AlphaTribeBg.png')",
         "mufasa-hero-bgimage": "url('/src/assets/images/MufasaHeroBg.png')",

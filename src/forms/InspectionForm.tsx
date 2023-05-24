@@ -30,7 +30,7 @@ const InspectionForm = () => {
 
   return (
     <div className="w-full h-full">
-      <form action="" className="w-full bg-black text-white lg:rounded-[30px] rounded-[15px] lg:py-[44px] md:py-[30px] py-[20px] lg:px-[41px] md:px-[30px] px-[18px]" onSubmit={formik.handleSubmit}>
+      <form action="" className="w-full bg-black text-white lg:py-[44px] md:py-[30px] py-[20px] lg:px-[41px] md:px-[30px] px-[18px]" onSubmit={formik.handleSubmit}>
         <p className="text-xl font-bold mb-[30px]">1 hour inspections</p>
         <div>
           {FormData.map((item, index) => {
@@ -41,7 +41,7 @@ const InspectionForm = () => {
                   {item.label}
                 </label>{" "}
                 <br />
-                <div className="w-full flex bg-white p-2 items-center justify-between mt-[14px] rounded-xl mb-[30px]">
+                <div className="w-full flex bg-white p-2 items-center justify-between mt-[14px] rounded-[2px] mb-[30px]">
                   <p className="text-[#93A0AB]">{item.icon}</p>
                   <input type={item.type} {...formik.getFieldProps(item.props)} className="w-full cursor-pointer text-[#93A0AB] ml-1 outline-none border-none py-3 text-sm" placeholder={item.placeholder} />
                   {/* {formik.touched.name && formik.errors.name ? <div>{formik.errors.name}</div> : null} */}
@@ -51,7 +51,7 @@ const InspectionForm = () => {
           })}
         </div>
         <div>
-          <button className="w-full bg-gradient-to-b from-primary to-primary2 mb-[40px] cursor-pointer rounded-xl mt-[15px] py-4">Schedule</button>
+          <button className="w-full bg-primary mb-[40px] cursor-pointer rounded-[2px] mt-[15px] py-4">Schedule</button>
         </div>
       </form>
     </div>

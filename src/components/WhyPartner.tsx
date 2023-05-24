@@ -14,8 +14,8 @@ const WhyPartner = () => {
   ];
 
   return (
-    <div className="bg-primary lg:my-32 md:my-24 my-16 lg:px-[89px] px-[30px] lg:py-[100px] md:px-[70px] py-[50px]">
-      <h2 className="lg:text-5xl md:text-3xl text-2xl font-bold text-center">Why Partner With Us?</h2>
+    <div className=" bg-gradient-to-tr from-yellow-300 via-primary to-yellow-200 lg:my-32 md:my-24 my-16 lg:px-[89px] px-[30px] lg:py-[100px] md:px-[70px] py-[50px]">
+      <h2 className="lg:text-3xl md:text-2xl text-xl font-bold text-center">Why Partner With Us?</h2>
       <div className="w-full flex flex-col justify-center items-center py-12">
         {WhyPartnerData.map((item, index) => {
           return (
@@ -24,7 +24,7 @@ const WhyPartner = () => {
                 <p className="font-bold mr-3">{item.lable}</p>
                 <img src={MarkPng} className="md:w-[49px] md:h-[43px] w-[30px] h-[25px]" alt="" />
               </div>
-              <p>{item.content}</p>
+              <p className="font-light">{item.content}</p>
             </div>
           );
         })}

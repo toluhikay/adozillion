@@ -20,11 +20,11 @@ const Router = () => {
         <Routes>
           {/* <Route index element={<LandingPage />} /> */}
           <Route index element={<LandingPage1 />} />
-          {/* <Route path="/about_us" element={<AboutUs />} />
+          <Route path="/about_us" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUsPage />} />
           <Route path="alpha_tribe" element={<AlphaTribe />} />
           <Route path="mufasa_apartment" element={<MufasaApartments />} />
-          <Route element={<ValueGarden />} path="value_garden_city" /> */}
+          <Route element={<ValueGarden />} path="value_garden_city" />
         </Routes>
       </div>
       <WhatsAppCall />

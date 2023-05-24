@@ -3,6 +3,7 @@ import Subscribe from "../components/Subscribe";
 import HeaderDiv from "../common/HeaderDiv";
 import BgiNewsMufasa from "../components/BgiNewsMufasa";
 import WhyBestMufasa from "../components/WhyBestMufasa";
+import Footer from "../components/Footer";
 
 const MufasaApartments = () => {
   return (
@@ -15,6 +16,7 @@ const MufasaApartments = () => {
         <WhyBestMufasa />
       </div>
       <Subscribe />
+      <Footer />
     </div>
   );
 };

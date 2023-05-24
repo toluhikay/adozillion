@@ -4,6 +4,7 @@ import HeaderDiv from "../common/HeaderDiv";
 import TheBigNews from "../components/TheBigNews";
 import WhyPartner from "../components/WhyPartner";
 import Partnership from "../components/Partnership";
+import Footer from "../components/Footer";
 
 const AlphaTribe = () => {
   return (
@@ -21,6 +22,7 @@ const AlphaTribe = () => {
         <Partnership />
       </div>
       <Subscribe />
+      <Footer />
     </div>
   );
 };

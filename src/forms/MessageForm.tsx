@@ -19,18 +19,18 @@ const MessageForm = () => {
   ];
 
   return (
-    <div className="w-full">
-      <form action="" onSubmit={formik.handleSubmit} className="w-full bg-white shadow-black/30 lg:py-[81px] md:py-[60px] py-[40px] lg:px-[74px] md:px-[40px] px-[30px] shadow-lg mt-[50px] rounded-[30px]">
+    <div className="w-full flex flex-col justify-center items-center">
+      <form action="" onSubmit={formik.handleSubmit} className="w-full bg-white lg:w-[80%] w-full  shadow-black/30 lg:py-[81px] md:py-[60px] py-[40px] lg:px-[74px] md:px-[40px] px-[30px] shadow-lg mt-[50px] rounded-[5px]">
         <div className="flex justify-between items-start flex-wrap w-full">
           <div className="md:w-[48%] w-full">
             {FormData.map((item, index) => {
               return (
-                <div>
+                <div key={index}>
                   <label htmlFor={item.props} className="text-sm font-semibold">
                     {item.label}
                   </label>{" "}
                   <br />
-                  <div className="w-full flex bg-[#E9EDF8] p-2 items-center justify-between mt-[10px] rounded-xl mb-[30px]">
+                  <div className="w-full flex bg-[#E9EDF8] p-2 items-center justify-between mt-[10px] rounded-[2px] mb-[30px]">
                     <p className="text-[#93A0AB]">{item.icon}</p>
                     <input type={item.type} {...formik.getFieldProps(item.props)} className="w-full cursor-pointer bg-inherit text-[#93A0AB] ml-1 outline-none border-none py-3 text-sm" placeholder="Enter" />
                     {/* {formik.touched.(item.props) && formik.errors. ? <div>{formik.errors.{item.props}</div> : null} */}
@@ -44,11 +44,11 @@ const MessageForm = () => {
               Message
             </label>{" "}
             <br />
-            <textarea className="bg-[#E9EDF8] outline-none mt-[14px] p-2 rounded-xl w-full h-full border-none" name="message" id="" cols={30} rows={12}></textarea>
+            <textarea className="bg-[#E9EDF8] outline-none mt-[14px] p-2 rounded-[2px] w-full h-full border-none" name="message" id="" cols={30} rows={12}></textarea>
           </div>
         </div>
         <div className="w-full py-12 flex justify-center">
-          <button className="md:w-[60%] w-full bg-gradient-to-b from-primary to-primary2 py-4 rounded-xl text-white font-bold" type="submit">
+          <button className="md:w-[60%] w-full bg-primary py-4 rounded-[2px] text-white font-bold" type="submit">
             Contact
           </button>
         </div>
