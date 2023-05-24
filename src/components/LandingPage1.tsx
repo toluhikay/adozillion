@@ -21,7 +21,7 @@ const LandingPage1 = () => {
       <div className="flex flex-wrap justify-between mb-[100px] lg:px-[89px] mt-[30px] px-[30px]">
         {ProjectData.map((item) => {
           return (
-            <div className="sm:w-[48%] w-full md:mb-0 mb-3 text-secondary" key={item.id}>
+            <div className="sm:w-[48%] md:w-[24%] w-full md:mb-0 mb-3 text-secondary" key={item.id}>
               <img src={item.img} className="w-full h-[200px] lg:h-[300px] xl:h-[350px]" alt="" />
               <p className="font-bold py-3 underline">{item.name}</p>
             </div>
