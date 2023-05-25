@@ -7,7 +7,7 @@ const WhatsAppCall = () => {
       <div className="bg-white border border-primary lg:hidden text-blue-700 rounded-full p-3 text-2xl sm:text-3xl lg:text-5xl ">
         <IoMdCall />
       </div>
-      <a href="https://web.whatsapp.com/send?phone=2349155170650&text=Hello! I'm reaching out from the Adozillion Homes website." target="_blank" rel="noreferrer" className="bg-white border border-primary text-green-600 rounded-full p-3 text-2xl sm:text-3xl lg:text-5xl ">
+      <a href="https://api.whatsapp.com/send?phone=2349155170650&amp;text=Hello! I'm reaching out from the Adozillion Homes website." target="_blank" rel="noreferrer" className="bg-white border border-primary text-green-600 rounded-full p-3 text-2xl sm:text-3xl lg:text-5xl ">
         <IoLogoWhatsapp />
       </a>
     </div>
