@@ -2,7 +2,7 @@ import React from "react";
 
 const Subscribe = () => {
   return (
-    <div className=" bg-gradient-to-br from-yellow-300 via-primary to-yellow-200 flex justify-center items-center md:py-9  py-3 md:px-[36px] px-2 lg:mx-[95px] mx-[30px] bg-center overflow-hidden bg-cover">
+    <div className=" bg-gradient-to-br from-yellow-300 via-primary to-yellow-200 flex justify-center items-center md:py-9  py-3 md:px-[36px] px-2  bg-center overflow-hidden bg-cover">
       <div className="overflow-hidden lg:px-[50px] lg:py-[116px] md:py-[50px] p-2 md:px-[20px] flex justify-between items-start flex-wrap text-white h-full w-full">
         <div className="lg:w-[40%] w-full md:mb-0 mb-12">
           <h2 className="md:text-2xl xl:text-3xl font-bold mb-[25px]">Receive the latest News</h2>

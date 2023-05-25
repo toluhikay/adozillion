@@ -16,7 +16,7 @@ const AboutUs = () => {
         {" "}
         <HeaderDiv h1="about us" textCase="capitalize" p="why us" />
       </div>
-      <div className="lg:px-[89px] bg-gradient-to-tr flex flex-col items-center from-yellow-100 via-primary/70 to-yellow-200 w-full px-[30px]">
+      <div className="lg:px-[89px] sm:px-[30px] px-[15px] bg-gradient-to-tr flex flex-col items-center from-yellow-100 via-primary/70 to-yellow-200 w-full">
         <div className="md:w-[80%] w-full">
           <WhoAreWe />
           <MissionVision />

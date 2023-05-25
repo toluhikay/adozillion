@@ -14,11 +14,11 @@ const AlphaTribe = () => {
           <HeaderDiv h1="ALPHA TRIBE REAL ESTATE CO_OWNERSHIP" textCase="uppercase" />
         </div>
       </div>
-      <div className="flex flex-col justify-between lg:px-[89px] px-[30px]">
+      <div className="flex flex-col justify-between lg:px-[89px] sm:px-[30px] px-[15px]">
         <TheBigNews />
       </div>
       <WhyPartner />
-      <div className="flex flex-col justify-between lg:px-[89px] px-[30px]">
+      <div className="flex flex-col justify-between lg:px-[89px] sm:px-[30px] px-[15px]">
         <Partnership />
       </div>
       <Subscribe />

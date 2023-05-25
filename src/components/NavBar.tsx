@@ -29,7 +29,7 @@ const NavBar: React.FC = () => {
   ];
 
   return (
-    <header className="transition-all fixed top-0 left-0 w-full backdrop-blur-sm bg-white/60 text-black/70 flex flex-col md:flex-row justify-between items-center lg:px-[89px] px-[30px] py-2 z-[2000]">
+    <header className="transition-all fixed top-0 left-0 w-full backdrop-blur-sm bg-white/60 text-black/70 flex flex-col md:flex-row justify-between items-center lg:px-[89px] sm:px-[30px] px-[15px] py-2 z-[2000]">
       <div className="w-full md:w-auto flex justify-between">
         <img className="sm:w-auto w-[150px]" src={Logo} alt="" />
         <div className="md:hidden" onClick={() => setNavState(!navState)}>

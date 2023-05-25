@@ -15,7 +15,7 @@ const ContactUsPage = () => {
       <div className={`bg-[url('/src/assets/images/ContactUsbg.png')] w-full lg:min-h-[100vh] md:min-h-[70vh] h-[50vh] flex items-center justify-center bg-no-repeat bg-cover bg-center`}>
         <HeaderDiv h1="contact us" textCase="capitalize" p="Schedule a visit" />
       </div>
-      <div className="lg:px-[89px] px-[30px] flex flex-col justify-center items-center lg:pt-[140px] md:pt-[100px] py-[50px]">
+      <div className="lg:px-[89px] sm:px-[30px] px-[15px] flex flex-col justify-center items-center lg:pt-[140px] md:pt-[100px] py-[50px]">
         <p className="text-xl font-bold text-primary pb-[17px]">Contact Us</p>
         <h2 className="lg:text-5xl md:text-3xl text-2xl font-bold md:mb-[30px] mb-5">Schedule a visit</h2>
         <p className="text-center lg:w-[40%]">You can schedule a visit to inspect our properties. Kindly choose an appropriate date and time or reach out to us via</p>

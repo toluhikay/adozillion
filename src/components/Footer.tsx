@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
   const DATE = new Date().getFullYear();
 
   return (
-    <footer className="mt-[50px] bg-black w-full text-[#ABB5BE] lg:pt-[146px] md:pt-[70px] pt-[50px] lg:px-[123px] md:px-[50px] px-[30px]">
+    <footer className=" bg-black w-full text-[#ABB5BE] lg:pt-[146px] md:pt-[70px] pt-[50px] lg:px-[123px] md:px-[50px] px-[30px]">
       <div className="flex sm:flex-row flex-col justify-between mb-12">
         <div className="sm:w-auto w-full">
           <img src={Logo} className="w-[150px]" alt="" />
