@@ -8,9 +8,10 @@ import ContactUsPage from "../pages/ContactUsPage";
 import MufasaApartments from "../pages/MufasaApartments";
 import AlphaTribe from "../pages/AlphaTribe";
 import ValueGarden from "../pages/ValueGarden";
-import LandingPage1 from "../components/LandingPage1";
+// import LandingPage1 from "../pages/LandingPage1";
 import WhatsAppCall from "../components/WhatsAppCall";
 import Socials from "../components/Socials";
+import LandingPage1 from "../pages/LandingPage1";
 
 const Router = () => {
   return (

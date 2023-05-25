@@ -14,6 +14,7 @@ module.exports = {
         "alpha-bgimage": "url('/src/assets/images/AlphaTribeBg.png')",
         "mufasa-hero-bgimage": "url('/src/assets/images/MufasaHeroBg.png')",
         "mufasa-big-bgimage": "url('/src/assets/images/MufasaBigNewsBg.png')",
+        "evgc-bgimage": "url('/src/assets/images/EvgcBg.jpeg')",
       },
       colors: {
         primary: "#DDB057",

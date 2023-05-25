@@ -3,10 +3,11 @@ import Logo from "../assets/images/Logo.png";
 import { BsFillPlayFill } from "react-icons/bs";
 import { HiOutlineMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NavBar: React.FC = () => {
   const [navState, setNavState] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {}, []);
 
@@ -31,7 +32,7 @@ const NavBar: React.FC = () => {
   return (
     <header className="transition-all fixed top-0 left-0 w-full backdrop-blur-sm bg-white/60 text-black/70 flex flex-col md:flex-row justify-between items-center lg:px-[89px] sm:px-[30px] px-[15px] py-2 z-[2000]">
       <div className="w-full md:w-auto flex justify-between">
-        <img className="sm:w-auto w-[150px]" src={Logo} alt="" />
+        <img className="sm:w-auto w-[150px]" src={Logo} alt="" onClick={() => navigate("/")} />
         <div className="md:hidden" onClick={() => setNavState(!navState)}>
           {!navState ? <HiOutlineMenu className="text-4xl" /> : <IoMdClose className="text-4xl" />}
         </div>
@@ -47,7 +48,7 @@ const NavBar: React.FC = () => {
                 <div className="md:absolute hidden group-hover:flex flex-col w-[400px] h-[auto] md:left-[-200%] left-[30px] rounded-xl px-5 py-4 bg-white">
                   {LINK.project.map((project, id) => {
                     return (
-                      <Link to={project.projectLink} className="font-semibold mb-4 capitalize" key={id}>
+                      <Link to={project.projectLink} className="font-semibold mb-4 capitalize" key={id} onClick={() => setNavState(false)}>
                         <p>{project.projectName}</p>
                       </Link>
                     );
@@ -55,7 +56,7 @@ const NavBar: React.FC = () => {
                 </div>
               </div>
             ) : (
-              <Link to={LINK.link === "home" ? "/" : LINK.link} className="font-semibold md:mb-0 mb-12 capitalize" key={index}>
+              <Link to={LINK.link === "home" ? "/" : LINK.link} className="font-semibold md:mb-0 mb-12 capitalize" key={index} onClick={() => setNavState(false)}>
                 <p>{LINK.linkName}</p>
               </Link>
             );
