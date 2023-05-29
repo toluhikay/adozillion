@@ -21,7 +21,7 @@ const NavBar: React.FC = () => {
       project: [
         { id: 1, projectLink: "mufasa_apartment", projectName: "Mufasa Apartment" },
         { id: 2, projectLink: "alpha_tribe", projectName: "Alpha Tribe real Estate Co-Ownership" },
-        { id: 3, projectLink: "value_garden_city", projectName: "Value Garden City" },
+        { id: 3, projectLink: "value_garden_city", projectName: "Eco Value Garden City" },
         // { id: 4, projectLink: "", projectName: "" },
       ],
     },
