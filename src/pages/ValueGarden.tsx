@@ -21,16 +21,16 @@ const ValueGarden = () => {
   return (
     <div className="flex flex-col items-center">
       <div className={`bg-[url('/src/assets/images/EvgcBg.jpeg')] bg-blend-darken bg-black/70 lg:h-[100vh] w-full min-h-[50vh] flex items-center justify-center bg-no-repeat bg-cover bg-center`}>
-        <HeaderDiv h1="Eco Value Garden City" textCase="capitalize" />
+        <HeaderDiv h1="Eco Value Garden City" p="Ketu Epe, Lagos." textCase="capitalize" />
       </div>
       <div className="lg:py-[100px] md:py-[70px] py-[50px] lg:px-[89px] md:px-[30px] px-[15px] flex flex-col items-center text-center">
         <h3 className="lg:w-[60%] md:w-[80%] lg:mb-12 md:mb-10 mb-6 lg:text-3xl md:text-2xl text-xl font-medium">
           <span className="text-green-600">A Paradise of Wealth and Tranquility</span> <br /> 🌴🌴🌴
         </h3>
         <p className="lg:w-[70%] lg:text-xl sm:text-base text-sm font-extralight">
-          Eco Value Garden City (EVGC), Epe, is an eco-luxury Real Estate development, sitting on approximately 70 acres of land.
+          Eco Value Garden City(EVGC) Epe, is an eco-luxury Real Estate development, situated along Epe-Ikorodu Express Way, sitting on approximately 70 acres of land.
           <br /> <br />
-          <p>It is a world-class city built with the upper, middle-class, and upwardly mobile people in mind. It is suitable for investment, quality, and a better living experience. </p>
+          <span>It is a world-Class city built with the upper, middle-class, and upwardly mobile people in mind. It is suitable for investment, quality and a better living experience</span>
         </p>
         <div className="flex justify-between py-12 w-full flex-wrap items-start">
           {Details.map((item, index) => {

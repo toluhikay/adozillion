@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import Fresh1 from "../assets/images/Fresh1.png";
 import Fresh2 from "../assets/images/Fresh2.png";
 import Evgc from "../assets/images/evgc.jpeg";
+import { Link, useNavigate } from "react-router-dom";
 
 const LandingPage1 = () => {
-  const [loadState, setLoadState] = useState(false);
   const ProjectData = [
-    { id: 2, img: Fresh2, name: "Mufasa Apartments" },
-    { id: 1, img: Fresh1, name: "Monte Carlo Lagos" },
-    { id: 4, img: Evgc, name: "Eco Value Garden City" },
+    { id: 2, img: Fresh2, name: "Mufasa Apartments", link: "https://mufasaapartments.com/" },
+    { id: 1, img: Fresh1, name: "Monte Carlo Lagos", link: "https://www.montecarlolagos.com/" },
+    { id: 4, img: Evgc, name: "Eco Value Garden City", link: "/eco_value_garden_city" },
   ];
   const DATE = new Date().getFullYear();
+  const navigate = useNavigate();
 
   return (
     <div data-aos-offset="0" className="w-full relative bg-gradient-to-tr from-yellow-100 via-yellow-200 to-white bg-center bg-cover bg-no-repeat min-h-screen flex flex-col justify-center items-center ">
@@ -20,11 +21,13 @@ const LandingPage1 = () => {
         <button className="bg-secondary text-white px-6 py-2 text-xl font-light rounded-[2px]">Get Started</button>
       </div>
       <div data-aos="fade-left" data-aos-delay="500" className="flex flex-wrap md:justify-between mb-[100px] lg:px-[89px] mt-[30px] px-[30px]">
-        {ProjectData.map((item) => {
+        {ProjectData.map((item, index) => {
           return (
             <div className="md:w-[32%] md:mx-0 sm:mx-[20%] w-full md:mb-0 mb-3 text-secondary" key={item.id}>
               <img src={item.img} className="w-full h-[200px] lg:h-[300px] xl:h-[350px]" alt="" />
-              <p className="font-bold py-3 underline cursor-pointer">{item.name}</p>
+              <Link to={item.link} target={index === 0 || index === 1 ? "_blank" : "_parent"}>
+                <p className="font-bold py-3 underline cursor-pointer">{item.name}</p>
+              </Link>
             </div>
           );
         })}

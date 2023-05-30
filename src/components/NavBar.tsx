@@ -19,9 +19,10 @@ const NavBar: React.FC = () => {
       link: "projects",
       linkName: "projects",
       project: [
-        { id: 1, projectLink: "mufasa_apartment", projectName: "Mufasa Apartment" },
+        { id: 1, projectLink: "https://www.montecarlolagos.com/", projectName: "Monte Carlo Lagos" },
+        { id: 4, projectLink: "https://mufasaapartments.com/", projectName: "Mufasa Apartment" },
+        { id: 3, projectLink: "eco_value_garden_city", projectName: "Eco Value Garden City" },
         { id: 2, projectLink: "alpha_tribe", projectName: "Alpha Tribe real Estate Co-Ownership" },
-        { id: 3, projectLink: "value_garden_city", projectName: "Eco Value Garden City" },
         // { id: 4, projectLink: "", projectName: "" },
       ],
     },
@@ -48,7 +49,7 @@ const NavBar: React.FC = () => {
                 <div className="md:absolute hidden group-hover:flex flex-col w-[400px] h-[auto] md:left-[-200%] left-[30px] rounded-xl px-5 py-4 bg-white">
                   {LINK.project.map((project, id) => {
                     return (
-                      <Link to={project.projectLink} className="font-semibold mb-4 capitalize" key={id} onClick={() => setNavState(false)}>
+                      <Link to={project.projectLink} target={id === 0 || id === 1 ? "_blank" : "_parent"} className="font-semibold mb-4 capitalize" key={id} onClick={() => setNavState(false)}>
                         <p>{project.projectName}</p>
                       </Link>
                     );

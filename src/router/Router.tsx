@@ -1,17 +1,16 @@
 import React from "react";
 import NavBar from "../components/NavBar";
 import { Route, Routes } from "react-router-dom";
-import Footer from "../components/Footer";
-import LandingPage from "../pages/LandingPage";
 import AboutUs from "../pages/AboutUs";
 import ContactUsPage from "../pages/ContactUsPage";
 import MufasaApartments from "../pages/MufasaApartments";
 import AlphaTribe from "../pages/AlphaTribe";
 import ValueGarden from "../pages/ValueGarden";
-// import LandingPage1 from "../pages/LandingPage1";
 import WhatsAppCall from "../components/WhatsAppCall";
 import Socials from "../components/Socials";
 import LandingPage1 from "../pages/LandingPage1";
+import EvgcSb from "../pages/EvgcSub";
+import Footer from "../components/Footer";
 
 const Router = () => {
   return (
@@ -25,7 +24,8 @@ const Router = () => {
           <Route path="/contact" element={<ContactUsPage />} />
           <Route path="alpha_tribe" element={<AlphaTribe />} />
           <Route path="mufasa_apartment" element={<MufasaApartments />} />
-          <Route element={<ValueGarden />} path="value_garden_city" />
+          <Route element={<ValueGarden />} path="eco_value_garden_city" />
+          <Route path="evgc_subform" element={<EvgcSb />} />
         </Routes>
       </div>
       <WhatsAppCall />
