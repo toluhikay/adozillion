@@ -1,5 +1,4 @@
 import React from "react";
-import Subscribe from "../components/Subscribe";
 import Footer from "../components/Footer";
 import HeaderDiv from "../common/HeaderDiv";
 import { BsSignpostSplit } from "react-icons/bs";
@@ -20,7 +19,7 @@ const ValueGarden = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className={`bg-[url('/src/assets/images/EvgcBg.jpeg')] bg-blend-darken bg-black/70 lg:h-[100vh] w-full min-h-[50vh] flex items-center justify-center bg-no-repeat bg-cover bg-center`}>
+      <div className={`bg-[url('/src/assets/images/EvgcBg.jpeg')] bg-blend-darken bg-black/60 lg:h-[100vh] w-full min-h-[50vh] flex items-center justify-center bg-no-repeat bg-cover bg-center`}>
         <HeaderDiv h1="Eco Value Garden City" p="Ketu Epe, Lagos." textCase="capitalize" />
       </div>
       <div className="lg:py-[100px] md:py-[70px] py-[50px] lg:px-[89px] md:px-[30px] px-[15px] flex flex-col items-center text-center">

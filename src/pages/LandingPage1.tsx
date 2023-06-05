@@ -2,7 +2,7 @@ import React from "react";
 import Fresh1 from "../assets/images/Fresh1.png";
 import Fresh2 from "../assets/images/Fresh2.png";
 import Evgc from "../assets/images/evgc.jpeg";
-import AlphaPicture from "../assets/images/AlphaTribeBg.png";
+import AlphaPicture from "../assets/images/Investment.avif";
 import { Link, useNavigate } from "react-router-dom";
 
 const LandingPage1 = () => {
