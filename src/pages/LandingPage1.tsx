@@ -2,7 +2,7 @@ import React from "react";
 import Fresh1 from "../assets/images/Fresh1.png";
 import Fresh2 from "../assets/images/Fresh2.png";
 import Evgc from "../assets/images/evgc.jpeg";
-import AlphaPicture from "../assets/images/Investment.avif";
+import AlphaPicture from "../assets/images/investment.jpeg";
 import { Link, useNavigate } from "react-router-dom";
 
 const LandingPage1 = () => {
@@ -28,7 +28,7 @@ const LandingPage1 = () => {
         {ProjectData.map((item, index) => {
           return (
             <div className="md:w-[23%] md:mx-0 sm:mx-[20%] w-full md:mb-0 mb-3 text-secondary" key={item.id}>
-              <img src={item.img} className="w-full h-[200px] lg:h-[300px] xl:h-[350px]" alt="" />
+              <img src={item.img} className="w-full h-auto lg:h-[250px] xl:h-[300px]" alt="" />
               <Link to={item.link} target={index === 0 || index === 1 ? "_blank" : "_parent"}>
                 <p className="font-bold py-3 underline cursor-pointer">{item.name}</p>
               </Link>
