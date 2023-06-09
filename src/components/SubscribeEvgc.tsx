@@ -6,7 +6,7 @@ const SubscribeEvgc = () => {
       <div className="overflow-hidden lg:px-[50px] lg:py-[116px] md:py-[50px] p-2 md:px-[20px] flex justify-between items-start flex-wrap text-white h-full w-full">
         <div className="lg:w-[40%] w-full md:mb-0 mb-12">
           <h2 className="md:text-2xl xl:text-3xl font-bold mb-[25px]">Receive the latest News</h2>
-          <p>Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem</p>
+          <p>Stay up-to-date with the latest trends, news, and exclusive offers by subscribing to our newsletter. Join our community of avid readers and never miss out on the exciting content we have in store for you.</p>
         </div>
         <div className="lg:w-[55%] w-full">
           <h2 className="md:text-2xl xl:text-3xl font-bold mb-[25px]">Subscribe to our news letter</h2>

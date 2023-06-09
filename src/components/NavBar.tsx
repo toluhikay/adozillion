@@ -22,7 +22,7 @@ const NavBar: React.FC = () => {
         { id: 1, projectLink: "https://www.montecarlolagos.com/", projectName: "Monte Carlo Lagos" },
         { id: 4, projectLink: "https://mufasaapartments.com/", projectName: "Mufasa Apartment" },
         { id: 3, projectLink: "eco_value_garden_city", projectName: "Eco Value Garden City" },
-        { id: 2, projectLink: "alpha_tribe", projectName: "Alpha Tribe real Estate Co-Ownership" },
+        { id: 2, projectLink: "alpha_tribe", projectName: "Alpha Tribe Co-operative club" },
         // { id: 4, projectLink: "", projectName: "" },
       ],
     },

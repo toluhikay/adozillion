@@ -18,7 +18,7 @@ import Blogs from "../pages/Blogs";
 const Router = () => {
   const portals: any = document.getElementById("portals");
   return (
-    <div className="w-full relative overflow-x-hidden max-w-[1800px]">
+    <div className="w-full relative overflow-x-hidden max-w-[2500px]">
       <NavBar />
       <div>
         <Routes>

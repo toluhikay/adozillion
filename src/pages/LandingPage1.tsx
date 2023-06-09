@@ -1,5 +1,5 @@
 import React from "react";
-import Fresh1 from "../assets/images/Fresh1.png";
+import Fresh1 from "../assets/images/MonteCarlo.jpg";
 import Fresh2 from "../assets/images/Fresh2.png";
 import Evgc from "../assets/images/evgc.jpeg";
 import AlphaPicture from "../assets/images/investment.jpeg";
@@ -10,7 +10,7 @@ const LandingPage1 = () => {
     { id: 2, img: Fresh2, name: "Mufasa Apartments", link: "https://mufasaapartments.com/" },
     { id: 1, img: Fresh1, name: "Monte Carlo Lagos", link: "https://www.montecarlolagos.com/" },
     { id: 4, img: Evgc, name: "Eco Value Garden City", link: "/eco_value_garden_city" },
-    { id: 4, img: AlphaPicture, name: "Alpha Tribe Club", link: "/alpha_tribe" },
+    { id: 4, img: AlphaPicture, name: "Alpha Tribe Co-operative club", link: "/alpha_tribe" },
   ];
   const DATE = new Date().getFullYear();
   const navigate = useNavigate();
