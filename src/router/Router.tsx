@@ -12,6 +12,9 @@ import ValueGarden from "../pages/ValueGarden";
 import WhatsAppCall from "../components/WhatsAppCall";
 import Socials from "../components/Socials";
 import LandingPage1 from "../pages/LandingPage1";
+import Blog from "../pages/Blog.js";
+
+
 
 const Router = () => {
   return (
@@ -26,6 +29,7 @@ const Router = () => {
           <Route path="alpha_tribe" element={<AlphaTribe />} />
           <Route path="mufasa_apartment" element={<MufasaApartments />} />
           <Route element={<ValueGarden />} path="value_garden_city" />
+          <Route element={<Blog />} path="/blog" /> 
         </Routes>
       </div>
       <WhatsAppCall />
