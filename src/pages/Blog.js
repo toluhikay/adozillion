@@ -9,12 +9,12 @@ const firstBlogTheme = ['Love', 'Romance', 'Family', 'Friends', 'Peace', 'Commun
 
 const Blog = () => {
   return (
-    <div className='min-h-screen flex flex-col justify-center items-center w-11/12 mx-auto mt-20 text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px]'>
+    <div className='min-h-screen flex flex-col justify-center items-center w-11/12 mx-auto mt-28 text-[12px] md:text-[13px] lg:text-[14px] xl:text-[16px]'>
       <div className='md:flex md:space-x-6 lg:space-x-8 md:mt-10 '>
         <div className='border-2 md:w-[65%] lg:w-8/12'>
-        <img src={blogImage1} className='h-[200px] w-full object-cover'></img>
+        <img src={blogImage1} className='h-[200px] md:h-[220px] lg:h-[250px] xl:h-[307px] w-full object-cover'></img>
         <div className='w-11/12 mx-auto'>
-          <p className='text-[10px] font-[inter] mt-1 md:text-[12px] lg:text-[14px] xl:text-[15px] sm:mt-2'>Jan 21, 2023/By admin</p>
+          <p className='text-[10px] font-[inter] mt-1 md:text-[12px] lg:text-[14px] xl:text-[15px] sm:mt-2'>Jan 21, 2023 / By admin</p>
           <div className='flex justify-between mt-2 sm:mt-4'>
             {firstBlogTheme.map((item, index) => {
               return(
@@ -31,9 +31,9 @@ const Blog = () => {
         
         </div>
         <div className='mt-10 md:mt-0 border-2 md:w-[35%] lg:w-4/12 pb-2'>
-          <img src={blogImage2} className='w-full h-[200px] object-center'></img>
+          <img src={blogImage2} className='w-full h-[200px] md:h-[220px] lg:h-[250px] xl:h-[311px] object-center'></img>
           <div className='w-11/12 mx-auto'>
-            <p className='text-[10px] font-[inter] mt-1 md:mt-2 md:text-[12px] lg:text-[13px] xl:text-[14px] '>Jan 21, 2023/By admin</p>
+            <p className='text-[10px] font-[inter] mt-1 md:mt-2 md:text-[12px] lg:text-[13px] xl:text-[15px] '>Jan 21, 2023 / By admin</p>
             <div className='flex justify-between w-6/12 md:w-10/12 mt-2 md:mt-4'>
               {blogThemes.map((item, index) => {
                 return(
@@ -48,13 +48,13 @@ const Blog = () => {
           
         </div>
       </div>
-      <div className='mt-10 border-2 pb-2 md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-6'>
+      <div className='mt-6 md:grid md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-6 mb-[-16px]'>
           {blogPosts.map((item, index) => {
             return(
-              <div key={index}>
-               <img src={item.img} className='w-full h-[200px] object-cover'></img>
+              <div key={index} className='border-2 mb-6'>
+               <img src={item.img} className='w-full h-[200px] md:h-[220px] lg:h-[250px] xl:h-[311px] object-cover'></img>
                <div className='w-11/12 mx-auto'>
-                  <p className='text-[10px] md:text-[12px] lg:text-[13px] xl:text-[14px] font-[inter] mt-1'>{item.date}</p>
+                  <p className='text-[10px] md:text-[12px] lg:text-[13px] xl:text-[15px] font-[inter] mt-1'>{item.date} / By admin</p>
                 <div className='flex justify-between w-6/12 mt-2'>
                 {blogThemes.map((item, index) => {
                 return(
