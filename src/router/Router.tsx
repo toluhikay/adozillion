@@ -9,6 +9,8 @@ import ValueGarden from "../pages/ValueGarden";
 import WhatsAppCall from "../components/WhatsAppCall";
 import Socials from "../components/Socials";
 import LandingPage1 from "../pages/LandingPage1";
+
+import Blog from "../pages/Blog.js";
 import EvgcSb from "../pages/EvgcSub";
 import Footer from "../components/Footer";
 import { createPortal } from "react-dom";
@@ -28,9 +30,14 @@ const Router = () => {
           <Route path="/contact" element={<ContactUsPage />} />
           <Route path="alpha_tribe" element={<AlphaTribe />} />
           <Route path="mufasa_apartment" element={<MufasaApartments />} />
+
+          <Route element={<ValueGarden />} path="value_garden_city" />
+          <Route element={<Blog />} path="/blog" /> 
+
           <Route path="blog" element={<Blogs />} />
           <Route element={<ValueGarden />} path="eco_value_garden_city" />
           <Route path="evgc_subform" element={<EvgcSb />} />
+
         </Routes>
       </div>
       {createPortal(<PictureModal />, portals)}
