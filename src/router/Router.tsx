@@ -32,12 +32,11 @@ const Router = () => {
           <Route path="mufasa_apartment" element={<MufasaApartments />} />
 
           <Route element={<ValueGarden />} path="value_garden_city" />
-          <Route element={<Blog />} path="/blog" /> 
+          {/* <Route element={<Blog />} path="/blog" />  */}
 
           <Route path="blog" element={<Blogs />} />
           <Route element={<ValueGarden />} path="eco_value_garden_city" />
           <Route path="evgc_subform" element={<EvgcSb />} />
-
         </Routes>
       </div>
       {createPortal(<PictureModal />, portals)}

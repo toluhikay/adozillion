@@ -10,7 +10,7 @@ const LandingPage1 = () => {
     { id: 2, img: Fresh2, name: "Mufasa Apartments", link: "https://mufasaapartments.com/" },
     { id: 1, img: Fresh1, name: "Monte Carlo Lagos", link: "https://www.montecarlolagos.com/" },
     { id: 4, img: Evgc, name: "Eco Value Garden City", link: "/eco_value_garden_city" },
-    { id: 4, img: AlphaPicture, name: "Alpha Tribe Co-operative club", link: "/alpha_tribe" },
+    // { id: 4, img: AlphaPicture, name: "Alpha Tribe Co-operative club", link: "/alpha_tribe" },
   ];
   const DATE = new Date().getFullYear();
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ const LandingPage1 = () => {
       <div data-aos="fade-left" data-aos-delay="500" className="flex flex-wrap md:justify-between mb-[100px] lg:px-[89px] mt-[30px] px-[30px]">
         {ProjectData.map((item, index) => {
           return (
-            <div className="md:w-[23%] md:mx-0 sm:mx-[20%] w-full md:mb-0 mb-3 text-secondary" key={item.id}>
+            <div className="md:w-[33%] md:mx-0 sm:mx-[20%] w-full md:mb-0 mb-3 text-secondary" key={item.id}>
               <img src={item.img} className="w-full h-auto lg:h-[250px] xl:h-[300px]" alt="" />
               <Link to={item.link} target={index === 0 || index === 1 ? "_blank" : "_parent"}>
                 <p className="font-bold py-3 underline cursor-pointer">{item.name}</p>
