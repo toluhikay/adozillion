@@ -16,6 +16,7 @@ import Footer from "../components/Footer";
 import { createPortal } from "react-dom";
 import PictureModal from "../components/PictureModal";
 import Blogs from "../pages/Blogs";
+import OurFace from "../pages/OurFace";
 
 const Router = () => {
   const portals: any = document.getElementById("portals");
@@ -37,6 +38,7 @@ const Router = () => {
           <Route path="blog" element={<Blogs />} />
           <Route element={<ValueGarden />} path="eco_value_garden_city" />
           <Route path="evgc_subform" element={<EvgcSb />} />
+          <Route path="our_face" element={<OurFace />} />
         </Routes>
       </div>
       {createPortal(<PictureModal />, portals)}
