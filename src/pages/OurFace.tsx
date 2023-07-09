@@ -10,8 +10,8 @@ const OurFace = () => {
 
   return (
     <div className=" bg-gradient-to-br from-red-500/60 flex flex-col justify-center items-center  via-black/50 to-yellow-200/60 w-full h-auto">
-      <div className="flex flex-wrap lg:flex-row flex-col-reverse md:w-[80%] w-[90%] justify-between py-[100px] lg:px-[89px] md:px-[30px] px-[15px]  text-center min-h-screen items-center">
-        <div className="w-full my-12">
+      <div data-aos="fade-right" className="flex flex-wrap lg:flex-row flex-col-reverse md:w-[80%] w-[90%] justify-between py-[100px] lg:px-[89px] md:px-[30px] px-[15px]  text-center min-h-screen items-center">
+        <div data-aos="fade-left" className="w-full my-12">
           <p className=" bg-clip-text text-transparent font-bold lg:text-xl text-base bg-gradient-to-r to-red-400 via-black from-yellow-900">Meet Our Brand Ambassador</p>
           <h3 className="lg:text-5xl md:text-4xl text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r mt-2 from-yellow-800 to-red-700">Uche Montana</h3>
           <p className="text-yellow-900  text-xl leading-7 tracking-wider mt-6">
@@ -32,7 +32,7 @@ const OurFace = () => {
         <div className="flex justify-around pb-12 flex-wrap">
           {Gallery.map((item, index) => {
             return (
-              <div className="md:w-[30%] w-full md:mb-0 mb-12" key={index}>
+              <div data-aos={index % 2 === 0 ? "fade-left" : "fade-right"} className="md:w-[30%] w-full md:mb-0 mb-12" key={index}>
                 <img src={item} alt="" />
               </div>
             );
