@@ -10,6 +10,16 @@ const OurFace = () => {
 
   return (
     <div className=" bg-gradient-to-br from-red-500/60 flex flex-col justify-center items-center  via-black/50 to-yellow-200/60 w-full h-auto">
+      <h3 className="lg:text-5xl md:text-4xl pt-28 pb-16 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r mt-2 from-yellow-800 to-red-700">Adozillion Homes * Uche Montana</h3>
+      <div className="flex w-full  lg:px-[89px] md:px-[30px] px-[15px] lg:justify-between justify-center items-center flex-wrap">
+        <div className="lg:w-[38%] sm:w-[80%] w-full">
+          <form action="" className="bg-white lg:mb-0 mb-12 rounded-lg w-full min-h-[200px]"></form>
+        </div>
+        <div className="lg:w-[60%] sm:w-[80%] w-full">
+          <iframe className="w-full min-h-[500px]  rounded-lg" src="https://www.youtube.com/embed/DNv2z4g8GE4" title="Adozillion Homes Unveil Uche Montana As Brand Ambassador." frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        </div>
+      </div>
+
       <div data-aos="fade-right" className="flex flex-wrap lg:flex-row flex-col-reverse md:w-[80%] w-[90%] justify-between py-[100px] lg:px-[89px] md:px-[30px] px-[15px]  text-center min-h-screen items-center">
         <div data-aos="fade-left" className="w-full my-12">
           <p className=" bg-clip-text text-transparent font-bold lg:text-xl text-base bg-gradient-to-r to-red-400 via-black from-yellow-900">Meet Our Brand Ambassador</p>

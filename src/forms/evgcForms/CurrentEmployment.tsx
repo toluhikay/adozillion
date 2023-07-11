@@ -10,7 +10,7 @@ const CurrentEmployment = ({ formik }: FormikValues) => {
   ];
   return (
     <div className="h-[90%] overflow-auto relative">
-      <p className="mb-6 border-b pb-3 text-green-700 font-medium  lg:text-2xl md:text-xl text-lg">Current Employment Details</p>
+      <p className="mb-6 border-b pb-3 text-yellow-700 font-medium  lg:text-2xl md:text-xl text-lg">Current Employment Details</p>
       <div className="flex flex-wrap items-start justify-between">
         {NOKInfo.map((item) => {
           return (

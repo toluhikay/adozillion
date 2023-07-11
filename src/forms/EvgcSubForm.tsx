@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Formik, useFormik } from "formik";
+import { useFormik } from "formik";
 import PersonalInformation from "./PersonalInformation";
 import * as Yup from "yup";
 import NextOfKin from "./evgcForms/NextOfKin";
@@ -70,8 +70,9 @@ const EvgcSubForm = () => {
 
   const formik = useFormik({
     initialValues,
-    validateOnBlur: true,
-    validateOnChange: true,
+    // validateOnBlur: true,
+    // validateOnChange: true,
+    validateOnMount: true,
     validationSchema,
     onSubmit(values, formikHelpers) {
       alert(JSON.stringify(values));
@@ -101,7 +102,7 @@ const EvgcSubForm = () => {
             <p>Fill in the Form </p>
           ) : (
             <button
-              className={`bg-green-800 w-[100px] p-2 text-white rounded-[2px] `}
+              className={`bg-yellow-700 w-[100px] z-[300000] p-2 text-white rounded-[2px] `}
               type="button"
               onClick={() => {
                 setStepper((prevState) => prevState - 1);
@@ -110,7 +111,12 @@ const EvgcSubForm = () => {
               Previous
             </button>
           )}
-          <button className="bg-green-800 w-[100px] p-2 text-white rounded-[2px] cursor-pointer" type={stepper === stepperLength ? "submit" : "button"} onClick={() => (stepper === stepperLength ? "" : setStepper((prevState) => prevState + 1))}>
+          <button
+            className="bg-yellow-700 w-[100px] z-[300000] p-2 text-white rounded-[2px] cursor-pointer"
+            type={stepper === stepperLength ? "submit" : "button"}
+            onClick={() => (stepper === stepperLength ? null : setStepper((prevState) => prevState + 1))}
+            // onClick={() => setStepper((prevState) => prevState + 1)}
+          >
             {stepper === stepperLength ? "Submit" : "Next"}
           </button>
         </div>

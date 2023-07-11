@@ -5,6 +5,10 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
+import ReactGA from "react-ga";
+
+ReactGA.initialize("UA-G-71Z9EQMPB1");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
